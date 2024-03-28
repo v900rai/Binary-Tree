@@ -1,0 +1,9 @@
+Note all method here ... 
+pre ordertraverals..
+post ordertraverls..
+in orderTraaverls...
+count the node..
+cout the taotal sum..
+height...
+check left to right both are equls are not
+how to create binary tree ...formate here
