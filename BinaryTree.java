@@ -28,8 +28,9 @@ public class BinaryTree {
         //preOrderTraversal(root);
         //inorderTraversals(root);
        // postorderTraversals(root);
-        levelOrderTraversals(root);
-
+        //levelOrderTraversals(root);
+       // System.out.println(countNode(root));
+        System.out.println(SumOfNode(root));
     }
     public static void preOrderTraversal(Node root){
         if(root==null){
@@ -73,5 +74,23 @@ public static void levelOrderTraversals(Node root){
 
     }
 }
+public  static int countNode(Node root){
+        if(root==null){
+            return 0;
+        }
+        int left=countNode(root.left);
+        int right=countNode(root.right);
+        return left+right+1;
+}
+    public  static int SumOfNode(Node root){
+        if(root==null){
+            return 0;
+        }
+        int leftSum=countNode(root.left);
+        int rightSum=countNode(root.right);
+        return leftSum+rightSum+root.data;
+    }
+    
+
 
 }
